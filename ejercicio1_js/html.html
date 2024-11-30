@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Descuentos</h1>
+        <form id="formulario"> <label for="producto">Nombre del Producto:</label> <input type="text" id="producto"
+                name="producto" required> <label for="categoria">Categoría:</label> <select id="categoria"
+                name="categoria" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select> <label for="precio">Precio Unitario:</label> <input type="number" id="precio" name="precio"
+                min="0.01" step="0.01" required> <label for="unidades">Unidades:</label> <input type="number"
+                id="unidades" name="unidades" min="1" required> <button type="submit">Calcular</button> </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
